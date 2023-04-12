@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -13,31 +14,32 @@
 </head>
 
 <body>
-    <script src="./index.js"></script>
-    <h1>Álbuns</h1>
-    <div class="carrosel">
-        <!-- <a class="prev">&#10094;</a> -->
-        <div class="div-one" onclick="Toggle_one()">
-            <h2 class="one">Blabla</h2>
-            <img class="img-one" src="./img/immunity.jpg" alt="Imagem do carrosel">
+    <div class="gradient">
+        <h1>Álbuns</h1>
+        <div class="carrosel">
+            <!-- <a class="prev">&#10094;</a> -->
+            <div class="div-one" onclick="Toggle_one()">
+                <h2 class="one">Immunity</h2>
+                <img class="img-one" src="./img/immunity.jpg" alt="Imagem do carrosel">
+            </div>
+            <div class="div-two" onclick="Toggle_two()">
+                <h2>COPINGMECHANISM</h2>
+                <img class="img-two" src="./img/coping_mechanism.jpg" alt="Imagem do carrosel">
+            </div>
+            <div class="div-three">
+                <h2>Fine Line</h2>
+                <img class="img-three" src="./img/fine_line.jpg" alt="Imagem do carrosel">
+            </div>
+            <div class="div-four" onclick="Toggle_four()">
+                <h2>Golden Hour</h2>
+                <img class="img-four" src="./img/golden_hour.jpg" alt="Imagem do carrosel">
+            </div>
+            <div class="div-five" onclick="Toggle_five()">
+                <h2>Blurryface</h2>
+                <img class="img-five" src="./img/blurryface.jpg" alt="Imagem do carrosel">
+            </div>
+            <!-- <a class="next">&#10095;</a> -->
         </div>
-        <div class="div-two" onclick="Toggle_two()">
-            <h2>Blabla</h2>
-            <img class="img-two" src="./img/coping_mechanism.jpg" alt="Imagem do carrosel">
-        </div>
-        <div class="div-three">
-            <h2>Blabla</h2>
-            <img class="img-three" src="./img/fine_line.jpg" alt="Imagem do carrosel">
-        </div>
-        <div class="div-four" onclick="Toggle_four()">
-            <h2>Blabla</h2>
-            <img class="img-four" src="./img/golden_hour.jpg" alt="Imagem do carrosel">
-        </div>
-        <div class="div-five" onclick="Toggle_five()">
-            <h2>Blabla</h2>
-            <img class="img-five" src="./img/blurryface.jpg" alt="Imagem do carrosel">
-        </div>
-        <!-- <a class="next">&#10095;</a> -->
     </div>
 </body>
 

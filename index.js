@@ -10,6 +10,9 @@ function Toggle_one(){
 
     let div_five = document.querySelector('.div-five');
     div_five.classList.toggle('one-focused-five');
+
+    let gradient = document.querySelector('.gradient');
+    gradient.classList.toggle('gradient-one')
 }
 
 function Toggle_two(){
@@ -27,6 +30,9 @@ function Toggle_two(){
 
     let div_five = document.querySelector('.div-five');
     div_five.classList.toggle('two-focused-five');
+
+    let gradient = document.querySelector('.gradient');
+    gradient.classList.toggle('gradient-two')
 }
 
 function Toggle_four(){
@@ -44,6 +50,9 @@ function Toggle_four(){
 
     let div_five = document.querySelector('.div-five');
     div_five.classList.toggle('four-focused-five');
+
+    let gradient = document.querySelector('.gradient');
+    gradient.classList.toggle('gradient-four')
 }
 
 function Toggle_five(){
@@ -58,6 +67,9 @@ function Toggle_five(){
 
     let div_three = document.querySelector('.div-three');
     div_three.classList.toggle('five-focused-three');
+
+    let gradient = document.querySelector('.gradient');
+    gradient.classList.toggle('gradient-five')
 }
 
 
