@@ -2,7 +2,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto'
+    font-family: 'Roboto';
+    color: white;
+    transition: 1s;
 }
 
 body{
@@ -12,12 +14,17 @@ body{
 /*CAROUSEL DIVS*/
 
 .carrosel{
+    display: flex;
+    flex-direction: row;
     margin-top: 11rem;
     margin-left: 17.5rem;
 }
-.carrosel img{
+.carrosel div{
     margin-left: 1rem;
-    transition: 1s;
+}
+
+.carrosel h2{
+    margin-bottom: 1rem;
 }
 
 .carrosel img:hover{
@@ -49,4 +56,121 @@ body{
 
 .img-three{
     box-shadow: 0px 0px 10px rgb(255, 255, 255)
+}
+
+/*STANDARD DISPLAY*/
+
+.div-one h2, .div-two h2, .div-four h2, .div-five h2{
+    display: none;
+}
+
+/*ONE FOCUSED*/
+.one-focused img{
+    width: auto;
+}
+
+.one-focused h2{
+    display: block;
+}
+
+.one-focused-three h2{
+    display: none;
+}
+
+.one-focused-three img{
+    width: 5rem;
+}
+
+.one-focused-four img{
+    width: 3rem;
+}
+
+.one-focused-five img{
+    width: 2rem;
+}
+
+/*TWO FOCUSED*/
+.two-focused img{
+    width: auto;
+}
+
+.two-focused h2{
+    display: block;
+}
+
+
+.two-focused-one img{
+    width: 8rem;
+}
+
+.two-focused-three img{
+    width: 8rem;
+}
+
+.two-focused-three h2{
+    display: none;
+}
+
+.two-focused-four img{
+    width: 5rem;
+}
+
+.two-focused-five img{
+    width: 3rem;
+}
+
+/*FOUR FOCUSED*/
+
+.four-focused img{
+    width: auto;
+}
+
+.four-focused h2{
+    display: block;
+}
+
+
+.four-focused-one img{
+    width: 3rem;
+}
+
+.four-focused-three img{
+    width: 8rem;
+}
+
+.four-focused-three h2{
+    display: none;
+}
+
+.four-focused-two img{
+    width: 5rem;
+}
+
+.four-focused-five img{
+    width: 8rem;
+}
+
+/*FIVE FOCUSED*/
+.five-focused img{
+    width: auto;
+}
+
+.five-focused h2{
+    display: block;
+}
+
+.five-focused-three h2{
+    display: none;
+}
+
+.five-focused-three img{
+    width: 5rem;
+}
+
+.five-focused-two img{
+    width: 3rem;
+}
+
+.five-focused-one img{
+    width: 2rem;
 }
