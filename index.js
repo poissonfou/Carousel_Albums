@@ -1,7 +1,3 @@
-
-
-
-
 function Toggle_one(){
     const div_one = document.querySelector('.div-one');
     div_one.classList.toggle('one-focused');
