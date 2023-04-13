@@ -19,6 +19,12 @@ function Toggle_one(){
 
     let img = document.querySelector('.singer-img');
     img.setAttribute('src', './img/1.jpg')
+
+    let spotify = document.querySelector('.spotify');
+    spotify.setAttribute('href', urls[0]);
+
+    let yt = document.querySelector('.youtube');
+    yt.setAttribute('href', urls[1]);
 }
 
 function Toggle_two(){
@@ -45,6 +51,12 @@ function Toggle_two(){
 
     let img = document.querySelector('.singer-img');
     img.setAttribute('src', './img/2.jpg')
+
+    let spotify = document.querySelector('.spotify');
+    spotify.setAttribute('href', urls[2]);
+
+    let yt = document.querySelector('.youtube');
+    yt.setAttribute('href', urls[3]);
 }
 
 function Toggle_four(){
@@ -71,6 +83,12 @@ function Toggle_four(){
 
     let img = document.querySelector('.singer-img');
     img.setAttribute('src', './img/4.jpg')
+
+    let spotify = document.querySelector('.spotify');
+    spotify.setAttribute('href', urls[4]);
+
+    let yt = document.querySelector('.youtube');
+    yt.setAttribute('href', urls[5]);
 }
 
 function Toggle_five(){
@@ -94,6 +112,12 @@ function Toggle_five(){
 
     let img = document.querySelector('.singer-img');
     img.setAttribute('src', './img/5.jpg')
+
+    let spotify = document.querySelector('.spotify');
+    spotify.setAttribute('href', urls[6]);
+
+    let yt = document.querySelector('.youtube');
+    yt.setAttribute('href', urls[7]);
 }
 
 let albums = [
@@ -101,4 +125,15 @@ let albums = [
     'Coping Mechanism (stylized as <COPINGMECHANISM>) is the fifth studio album by American singer Willow. It was released on October 7, 2022, through MSFTS Music and Roc Nation. The album was preceded by a slew of singles, including Maybe Its My Fault, Hover Like a Goddess, Curious/Furious, and Split.Coping Mechanism is a pop punk, emo, grunge rock, and hard rock album with elements of metal, post-hardcore, gothic rock, ska punk, indie rock, screamo, guitar pop, R&B, and "avant-garde electro".',
     'Em 2015, o vocalista e vocalista Jeremias Heimbach, que já havia feito música como cantor e compositor, juntou-se a Oliver Sparkuhle para implementar o projeto de uma banda conjunta. Foi fundada oficialmente em 2018. Jeremias tem jogado na formação atual desde a primavera de 2018. Durante um show em Helmstedt, Baixa Saxônia, a banda foi descoberta por uma agência de artistas e assinada. Jeremias tornou-se conhecido por um público mais amplo como o ato de abertura de Giant Rooks e OK Kid. Seu EP de estreia Du muss an den Frühling glauben, produzido por Tim Tautorat, foi lançado pela banda em outubro de 2019. Em 28 de maio de 2021, foi lançado o primeiro álbum da banda, Golden Hour, que alcançou o número 9 nas paradas de álbuns alemãs.',
     'Blurryface é o quarto álbum de estúdio do duo norte-americano Twenty One Pilots, e o segundo álbum da banda lançado pela Fueled by Ramen. O álbum foi precedido pelo single, "Fairly Local", lançado em 17 de março de 2015. Foi definido para ser lançado em 19 de maio de 2015, mas, foi lançado dois dias antes em 17 de maio via iTunes. O disco estreou na primeira posição da tabela musical dos Estados Unidos, Billboard 200, com 146 mil cópias vendida. Blurryface é o quarto álbum de estúdio do duo norte-americano Twenty One Pilots, e o segundo álbum da banda lançado pela Fueled by Ramen. O álbum foi precedido pelo single, "Fairly Local", lançado em 17 de março de 2015. Foi definido para ser lançado em 19 de maio de 2015, mas, foi lançado dois dias antes em 17 de maio via iTunes. O disco estreou na primeira posição da tabela musical dos Estados Unidos, Billboard 200, com 146 mil cópias vendida'
+]
+
+let urls = [
+    'https://open.spotify.com/album/4kkVGtCqE2NiAKosri9Rnd',
+    'https://www.youtube.com/playlist?list=PLsAZ9VYSyO13Wp5GD8wM5OYtfMV0sck46',
+    'https://open.spotify.com/album/0oMXn0MNLNyvB4iJPZXOuV',
+    'https://www.youtube.com/playlist?list=PL7AyFRLdnY8qCIDYZZpSUFXiomHzvWqpw',
+    'https://open.spotify.com/album/1HmWZnKnecBlWqYcD7Zead',
+    'https://www.youtube.com/playlist?list=PLolZAjHU3zximZnudFIeC5-ZIMvjJ1trQ',
+    'https://open.spotify.com/album/3cQO7jp5S9qLBoIVtbkSM1',
+    'https://www.youtube.com/playlist?list=OLAK5uy_mWtWynXa5NeLQEJjvrmVZmmO48G4eBBWg'
 ]
