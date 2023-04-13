@@ -41,9 +41,42 @@ h1{
     margin-left: 37rem;
     margin-top: -7rem;
     position: absolute;
-    color: red;
+    color: rgb(255, 255, 255);
     font-size: 3rem;
     position: absolute;
+}
+
+/*ALBUM DESCRIPTION*/
+.info-box{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.8rem;
+}
+
+.pic img{
+    width: 37rem;
+    height: 31rem;
+    padding-top: 0.6rem;
+    padding-right: 0.7rem;
+}
+
+.pic{
+    background-color: black;
+    margin-top: -12rem;
+    border-top-right-radius: 1rem;
+}
+
+.info{
+    width: 50%;
+    font-size: 1.5rem;
+    height: 20rem;
+    margin-top: -12rem;
+    background-color: black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    line-height: 2.5rem;
+    border-top-left-radius: 1rem;
 }
 
 /*GRADIENTS*/
@@ -83,12 +116,12 @@ h1{
 /*BOX-SHADOW*/
 
 .img-one, .img-two{
-    box-shadow: -3px 0px 8px rgb(255, 255, 255)
+    box-shadow: -3px 0px 8px rgb(0, 0, 0)
 }
 
 
 .img-five, .img-four{
-    box-shadow: 3px 0px 8px rgb(255, 255, 255)
+    box-shadow: 3px 0px 8px rgb(0, 0, 0)
 }
 
 .img-three{
@@ -104,6 +137,7 @@ h1{
 /*ONE FOCUSED*/
 .one-focused img{
     width: auto;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255)
 }
 
 .one-focused h2{
@@ -117,6 +151,7 @@ h1{
 
 .one-focused-three img{
     width: 5rem;
+    box-shadow: 3px 0px 8px rgb(0, 0, 0)
 }
 
 .one-focused-four img{
@@ -130,6 +165,7 @@ h1{
 /*TWO FOCUSED*/
 .two-focused img{
     width: auto;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255)
 }
 
 .two-focused h2{
@@ -144,6 +180,7 @@ h1{
 
 .two-focused-three img{
     width: 8rem;
+    box-shadow: 3px 0px 8px rgb(0, 0, 0)
 }
 
 .two-focused-three h2{
@@ -162,6 +199,7 @@ h1{
 
 .four-focused img{
     width: auto;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255)
 }
 
 .four-focused h2{
@@ -176,6 +214,7 @@ h1{
 
 .four-focused-three img{
     width: 8rem;
+    box-shadow: 3px 0px 8px rgb(0, 0, 0)
 }
 
 .four-focused-three h2{
@@ -193,6 +232,7 @@ h1{
 /*FIVE FOCUSED*/
 .five-focused img{
     width: auto;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255)
 }
 
 .five-focused h2{
@@ -206,6 +246,7 @@ h1{
 
 .five-focused-three img{
     width: 5rem;
+    box-shadow: 3px 0px 8px rgb(0, 0, 0)
 }
 
 .five-focused-two img{
