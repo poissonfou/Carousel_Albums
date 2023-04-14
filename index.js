@@ -25,6 +25,13 @@ function Toggle_one(){
 
     let yt = document.querySelector('.youtube');
     yt.setAttribute('href', urls[1]);
+
+    let name = document.querySelector('.name');
+    name.textContent = artists[0];
+
+    
+    let line = document.getElementById('line');
+    line.style.backgroundColor = 'white';
 }
 
 function Toggle_two(){
@@ -57,6 +64,12 @@ function Toggle_two(){
 
     let yt = document.querySelector('.youtube');
     yt.setAttribute('href', urls[3]);
+
+    let name = document.querySelector('.name');
+    name.textContent = artists[1];
+
+    let line = document.getElementById('line');
+    line.style.backgroundColor = 'rgb(66, 17, 146)';
 }
 
 function Toggle_four(){
@@ -89,6 +102,13 @@ function Toggle_four(){
 
     let yt = document.querySelector('.youtube');
     yt.setAttribute('href', urls[5]);
+
+    let name = document.querySelector('.name');
+    name.textContent = artists[2];
+
+    
+    let line = document.getElementById('line');
+    line.style.backgroundColor = 'rgb(241, 98, 62)';
 }
 
 function Toggle_five(){
@@ -118,6 +138,12 @@ function Toggle_five(){
 
     let yt = document.querySelector('.youtube');
     yt.setAttribute('href', urls[7]);
+
+    let name = document.querySelector('.name');
+    name.textContent = artists[3];
+
+    let line = document.getElementById('line');
+    line.style.backgroundColor = 'rgb(247, 30, 30)';
 }
 
 let albums = [
@@ -136,4 +162,11 @@ let urls = [
     'https://www.youtube.com/playlist?list=PLolZAjHU3zximZnudFIeC5-ZIMvjJ1trQ',
     'https://open.spotify.com/album/3cQO7jp5S9qLBoIVtbkSM1',
     'https://www.youtube.com/playlist?list=OLAK5uy_mWtWynXa5NeLQEJjvrmVZmmO48G4eBBWg'
+]
+
+let artists = [
+    'Clairo',
+    'Willow',
+    'Jeremias',
+    'Twenty One Pilots'
 ]
