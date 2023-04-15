@@ -142,3 +142,11 @@ function Toggle(id, index){
   );
 }
 
+
+document.addEventListener("click", (e) => {
+    let target = e.target;
+
+    if(target.id == "one" || target.id == "two" || target.id == "three" ||  target.id == "four" ||  target.id == "five"){
+        Toggle(3,2);
+    }
+})
