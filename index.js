@@ -15,21 +15,9 @@ let artists = [
     'Twenty One Pilots'
 ]
 
-let ids = [
-    1,
-    2,
-    3,
-    4,
-    5
-]
+let ids = [ 1, 2, 3, 4, 5 ]
 
-let indexes = [
-    0,
-    1,
-    2,
-    3,
-    4
-]
+let indexes = [ 0, 1, 2, 3, 4 ]
 
 let url_yt = [
     'https://www.youtube.com/playlist?list=PLsAZ9VYSyO13Wp5GD8wM5OYtfMV0sck46',
@@ -153,3 +141,4 @@ function Toggle(id, index){
   
   );
 }
+
