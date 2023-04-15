@@ -1,0 +1,62 @@
+/*ALBUM DESCRIPTION*/
+.album-desc{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+#line{
+    width: 0.4rem;
+    height: 100%;
+    margin-left: 44rem;
+    margin-top: -9rem;
+    background-color: rgb(245, 56, 151);
+    position: absolute;
+    z-index: 15;
+}
+
+.name{
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.8rem;
+    margin-top: 0.5rem;
+}
+
+.singer-img{
+    width: 37rem;
+    height: 31rem;
+    padding-top: 0.6rem;
+    padding-right: 0.7rem;
+}
+
+.pic{
+    background-color: black;
+    margin-top: -12rem;
+    border-top-right-radius: 1rem;
+}
+
+
+.listen{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 15rem;
+    margin-top: 0.5rem;
+}
+
+.info{
+    width: 50%;
+    font-size: 1.5rem;
+    height: 20rem;
+    margin-top: -12rem;
+    background-color: black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    line-height: 2.5rem;
+    border-top-left-radius: 1rem;
+}

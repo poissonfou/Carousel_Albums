@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/focus.css">
+    <link rel="stylesheet" href="./styles/button.css">
+    <link rel="stylesheet" href="./styles/album_desc.css">
     <script src="./index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,58 +18,60 @@
 </head>
 
 <body onload="Toggle(3,2)">
-    <div id="gradient">
-        <h1>Álbuns</h1>
-        <div class="carrosel">
-            <!-- <a class="prev">&#10094;</a> -->
-            <div id="div-1" onclick="Toggle(1, 0)">
-                <h2>Immunity</h2>
-                <img src="./img/immunity.jpg" alt="Imagem do carrosel">
+    <main>
+        <div id="gradient">
+            <h1>Álbuns</h1>
+            <div class="carrosel">
+                <div id="div-1" onclick="Toggle(1, 0)">
+                    <h2>Immunity</h2>
+                    <img src="./img/albums/immunity.jpg" alt="Imagem do carrosel">
+                </div>
+                <div id="div-2" onclick="Toggle(2, 1)">
+                    <h2>COPINGMECHANISM</h2>
+                    <img src="./img/albums/coping_mechanism.jpg" alt="Imagem do carrosel">
+                </div>
+                <div id="div-3" onclick="Toggle(3, 2)">
+                    <h2>Fine Line</h2>
+                    <img src="./img/albums/fine_line.jpg" alt="Imagem do carrosel">
+                </div>
+                <div id="div-4" onclick="Toggle(4, 3)">
+                    <h2>Golden Hour</h2>
+                    <img src="./img/albums/golden_hour.jpg" alt="Imagem do carrosel">
+                </div>
+                <div id="div-5" onclick="Toggle(5, 4)">
+                    <h2>Blurryface</h2>
+                    <img src="./img/albums/blurryface.jpg" alt="Imagem do carrosel">
+                </div>
             </div>
-            <div id="div-2" onclick="Toggle(2, 1)">
-                <h2>COPINGMECHANISM</h2>
-                <img src="./img/coping_mechanism.jpg" alt="Imagem do carrosel">
-            </div>
-            <div id="div-3" onclick="Toggle(3, 2)">
-                <h2>Fine Line</h2>
-                <img src="./img/fine_line.jpg" alt="Imagem do carrosel">
-            </div>
-            <div id="div-4" onclick="Toggle(4, 3)">
-                <h2>Golden Hour</h2>
-                <img src="./img/golden_hour.jpg" alt="Imagem do carrosel">
-            </div>
-            <div id="div-5" onclick="Toggle(5, 4)">
-                <h2>Blurryface</h2>
-                <img src="./img/blurryface.jpg" alt="Imagem do carrosel">
-            </div>
-            <!-- <a class="next">&#10095;</a> -->
         </div>
-    </div>
-    <div id='line'></div>
-    <div class="info-box">
-        <div class="info">
-            <p class="album-desc">#</p>
-        </div>
-        <div class="pic">
-            <p class="name">Harry Styles</p>
-            <img class="singer-img" src="#" alt="Imagem do artista" id="five">
-            <p class="listen">Listen on: </p>
-            <div class="buttons">
-                <a class="spotify" href="#">
-                    <div class="spotify-button">
-                        <img class="spotify-logo" src="./img/poty.jpg" alt="Spotify logo">
-                        <p>Spotify</p>
+        <div id='line'></div>
+        <article>
+            <div class="info-box">
+                <div class="info">
+                    <p class="album-desc">#</p>
+                </div>
+                <div class="pic">
+                    <p class="name">Harry Styles</p>
+                    <img class="singer-img" src="#" alt="Imagem do artista">
+                    <p class="listen">Listen on: </p>
+                    <div class="buttons">
+                        <a class="spotify" href="#">
+                            <div class="spotify-button">
+                                <img class="spotify-logo" src="./img/spotify.jpg" alt="Spotify logo">
+                                <p>Spotify</p>
+                            </div>
+                        </a>
+                        <a class="youtube" href="#">
+                            <div class="youtube-button">
+                                <img class="youtube-logo" src="./img/yt.svg.png" alt="Youtube logo">
+                                <p>Youtube</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <a class="youtube" href="#">
-                    <div class="youtube-button">
-                        <img class="youtube-logo" src="./img/yt.svg.png" alt="Youtube logo">
-                        <p>Youtube</p>
-                    </div>
-                </a>
+                </div>
             </div>
-        </div>
-    </div>
+        </article>
+    </main>
 </body>
 
 </html>

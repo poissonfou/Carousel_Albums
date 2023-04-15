@@ -140,7 +140,7 @@ function Toggle(id, index){
             gradient.classList.toggle(`gradient-${id}`)
          
             let img = document.querySelector('.singer-img');
-            img.setAttribute('src', `./img/${id}.jpg`)
+            img.setAttribute('src', `./img/artists/${id}.jpg`)
         }
   },
     indexes.forEach((x) => {
