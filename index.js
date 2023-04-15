@@ -48,72 +48,95 @@ function Toggle(id, index){
        ids.forEach((x) => {
         if(id == x){
             console.log('working'); 
-            const div_one = document.querySelector(`.div-${id}`);
-            div_one.classList.toggle(`focused-${id}`);
-        
-            if(id == 1){
 
-                let div_three = document.querySelector(`.div-${id + 2}`);
+            let div_one = document.querySelector(`#div-1`);
+            div_one.className = ' ';
+
+            let div_two = document.querySelector(`#div-2`);
+            div_two.className = ' ';
+
+            let div_three = document.querySelector(`#div-3`);
+            div_three.className = ' ';
+
+            let div_four = document.querySelector(`#div-4`);
+            div_four.className = ' ';
+
+            let div_five = document.querySelector(`#div-5`);
+            div_five.className = ' ';
+
+            let gradient = document.querySelector('#gradient');
+            gradient.className = ' ';
+
+            const div = document.querySelector(`#div-${id}`);
+            div.classList.toggle(`focused-${id}`);
+            
+            if(id == 1){
+                let div_two = document.querySelector(`#div-${id + 1}`);
+                div_two.classList.toggle(`focused-${id}-${id + 1}`);
+
+                let div_three = document.querySelector(`#div-${id + 2}`);
                 div_three.classList.toggle(`focused-${id}-${id + 2}`);
             
-                let div_four = document.querySelector(`.div-${id + 3}`);
+                let div_four = document.querySelector(`#div-${id + 3}`);
                 div_four.classList.toggle(`focused-${id}-${id + 3}`);
             
-                let div_five = document.querySelector(`.div-${id + 4}`);
+                let div_five = document.querySelector(`#div-${id + 4}`);
                 div_five.classList.toggle(`focused-${id}-${id + 4}`);
 
             } else if(id == 2){
 
-                let div_one = document.querySelector(`.div-${id - 1}`);
+                let div_one = document.querySelector(`#div-${id - 1}`);
                 div_one.classList.toggle(`focused-${id}-${id - 1}`);
             
-                let div_three = document.querySelector(`.div-${id + 1}`);
+                let div_three = document.querySelector(`#div-${id + 1}`);
                 div_three.classList.toggle(`focused-${id}-${id + 1}`);
             
-                let div_four = document.querySelector(`.div-${id + 2}`);
+                let div_four = document.querySelector(`#div-${id + 2}`);
                 div_four.classList.toggle(`focused-${id}-${id + 2}`);
 
-                let div_five = document.querySelector(`.div-${id + 3}`);
+                let div_five = document.querySelector(`#div-${id + 3}`);
                 div_five.classList.toggle(`focused-${id}-${id + 3}`);
 
             } else if(id == 3){
-                let div_one = document.querySelector(`.div-${id - 2}`);
+                let div_one = document.querySelector(`#div-${id - 2}`);
                 div_one.classList.toggle(`focused-${id}-${id - 2}`);
             
-                let div_two = document.querySelector(`.div-${id - 1}`);
+                let div_two = document.querySelector(`#div-${id - 1}`);
                 div_two.classList.toggle(`focused-${id}-${id - 1}`);
             
-                let div_four = document.querySelector(`.div-${id + 1}`);
+                let div_four = document.querySelector(`#div-${id + 1}`);
                 div_four.classList.toggle(`focused-${id}-${id + 1}`);
 
-                let div_five = document.querySelector(`.div-${id + 2}`);
+                let div_five = document.querySelector(`#div-${id + 2}`);
                 div_five.classList.toggle(`focused-${id}-${id + 2}`);
             }
              else if(id == 4){
-                let div_one = document.querySelector(`.div-${id - 3}`);
+                let div_one = document.querySelector(`#div-${id - 3}`);
                 div_one.classList.toggle(`focused-${id}-${id - 3}`);
             
-                let div_two = document.querySelector(`.div-${id - 2}`);
+                let div_two = document.querySelector(`#div-${id - 2}`);
                 div_two.classList.toggle(`focused-${id}-${id - 2}`);
             
-                let div_three = document.querySelector(`.div-${id - 1}`);
+                let div_three = document.querySelector(`#div-${id - 1}`);
                 div_three.classList.toggle(`focused-${id}-${id - 1}`);
 
-                let div_five = document.querySelector(`.div-${id + 1}`);
+                let div_five = document.querySelector(`#div-${id + 1}`);
                 div_five.classList.toggle(`focused-${id}-${id + 1}`);
 
             } else if (id == 5){
-                let div_one = document.querySelector(`.div-${id - 4}`);
+                let div_one = document.querySelector(`#div-${id - 4}`);
                 div_one.classList.toggle(`focused-${id}-${id - 4}`);
             
-                let div_two = document.querySelector(`.div-${id - 3}`);
+                let div_two = document.querySelector(`#div-${id - 3}`);
                 div_two.classList.toggle(`focused-${id}-${id - 3}`);
             
-                let div_three = document.querySelector(`.div-${id - 2}`);
+                let div_three = document.querySelector(`#div-${id - 2}`);
                 div_three.classList.toggle(`focused-${id}-${id - 2}`);
+
+                let div_four = document.querySelector(`#div-${id - 1}`);
+                div_four.classList.toggle(`focused-${id}-${id - 1}`);
             }
-        
-            let gradient = document.querySelector('.gradient');
+    
             gradient.classList.toggle(`gradient-${id}`)
          
             let img = document.querySelector('.singer-img');
@@ -141,12 +164,3 @@ function Toggle(id, index){
   
   );
 }
-
-
-document.addEventListener("click", (e) => {
-    let target = e.target;
-
-    if(target.id == "one" || target.id == "two" || target.id == "three" ||  target.id == "four" ||  target.id == "five"){
-        Toggle(3,2);
-    }
-})
